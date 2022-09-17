@@ -1,0 +1,49 @@
+@import 'main/normalize.scss';
+@import 'main/fonts.scss';
+@import 'libs/bootstrap-grid.scss';
+@import 'libs/slick.scss';
+@import 'libs/aos.scss';
+@import 'main/animation.scss';
+html {
+    position: relative;
+    scroll-behavior: smooth;
+}
+section {
+    overflow: hidden;
+}
+* {
+    font-family: Roboto;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+button {
+	outline: none;
+	background-color: transparent;
+	border: none;
+}
+.container-fluid {
+    padding: 0 5.4%;
+}
+
+@media (min-width: 83.4375em) { //1399px
+    .container-fluid {
+        padding: 0 13%;
+    }
+}
+@media (min-width: 125em) { //2000px
+    html {
+        font-size: calc(1rem + (1.9 - 1) * ( (100vw - 101rem) / (250 - 125)));
+    }
+}
+@import 'blocks/button.scss';
+@import 'blocks/title.scss';
+@import 'blocks/paragraph.scss';
+@import 'blocks/header.scss';
+@import 'blocks/preview.scss';
+@import 'blocks/features.scss';
+@import 'blocks/screens.scss';
+@import 'blocks/pricing.scss';
+@import 'blocks/footer.scss';

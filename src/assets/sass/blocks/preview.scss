@@ -1,0 +1,86 @@
+.preview {
+	padding: 5.725rem 0 8rem 0;
+	background-image: url('../img/bg_top_sm.png');
+	background-color: #f8f9fe;
+	background-size: cover;
+	background-position: 0 bottom;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	&__image {
+		&-container {
+			overflow: hidden;
+			background-color: #fff;
+			box-shadow: 0px 7.5px 20.8333px -6.25px rgba(25, 42, 89, 0.2);
+			border-radius: 0.78125rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				object-fit: contain;
+				width: 100%;
+			}
+			&:first-child {
+				display: none;
+			}
+		}
+	}
+	&__desc {
+		margin-top: 1.625rem;
+	}
+}
+
+@media (min-width: 575px) {
+	.preview {
+		background-image: url('../img/bg_top.png');
+	}
+}
+@media (min-width: 61.9375em) { //991px
+	.preview {
+		min-height: calc(36rem + (51 - 36) * ( (100vw - 61.9375rem) / (100 - 61.9375)));
+		display: flex;
+		align-items: center;
+		position: relative;
+		&__image {
+			width: calc(35rem + (50.25 - 35) * ( (100vw - 61.9375rem) / (100 - 61.9375)));
+			height: calc(24.2rem + (34.6 - 24.2) * ( (100vw - 61.9375rem) / (100 - 61.9375)));
+			top: 20.2%;
+			right: calc(-1 * ( 5rem + (6.6 - 5) * ((100vw - 61.9375rem) / (100 - 61.9375)) ) );
+			position: absolute;
+			&-container {
+				border-radius: 1.875rem;
+				&:first-child {
+					display: flex;
+					z-index: 2;
+					justify-content: center;
+					align-items: center;
+					position: absolute;
+					width: 45%;
+					height: 45%;
+					top: 23%;
+					left: -7.5%;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 61.9375em) { //991px
+	.preview {
+		&__desc {
+			margin-top: 0;
+			min-height: 18rem;
+		}
+	}
+}
+@media (min-width: 100em) { //1600px
+	.preview {
+		min-height: 51rem;
+		display: flex;
+		align-items: center;
+		position: relative;
+		&__image {
+			width: 50.25rem;
+			height: 34.6rem;
+			right: -6.6rem;
+		}
+	}
+}

@@ -1,0 +1,37 @@
+.features {
+	padding-top: 3.125rem;
+	background-color: #f8f9fe;
+	&__block {
+		margin-top: 2.2rem;
+	}
+	&__desc {
+		text-align: center;
+	}
+	&__img {
+		height: 3.75rem;
+		svg {
+			height: 100%;
+		}
+	}
+}
+@media (min-width: 35.9375em) { //575px
+	.features {
+		&__img {
+			text-align: center;
+		}
+		&__desc {
+			margin-top: 1.625rem;
+		}
+	}
+}
+@media (min-width: 61.9375em) { //991px
+	.features {
+		padding-top: 2.5rem;
+		&__block {
+			margin-top: 4.9rem;
+		}
+		&__desc {
+			margin-top: 1.5rem;
+		}
+	}
+}
